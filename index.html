@@ -1,0 +1,93 @@
+<html>
+<head>
+  <script src="https://use.fontawesome.com/146111f83b.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hbox middle">
+  <a id="logo" href="http://memsql.com/" target="_blank">
+    <img src="images/logo.png" alt="logo">
+    <img src="images/booking.com_logo.png" alt="logo">
+  </a>
+</header>
+<section class="content main">
+  <div class="container vbox middle">
+    <div id="calendar" class="hbox center middle">
+      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+    </div>
+    <h2>Book a Demo</h2>
+    <p>Help us customize your demo by answering the following questions below.</p>
+  </div>
+  <form>
+    <div class="e-mail-container input-section">
+      <label for="e-mail">Business Email</label><br>
+      <input id="e-mail" type="email" placeholder="someone@example.com" autocomplete="email">
+      <span class="error-message"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Please enter a valid email</span>
+    </div>
+    <div class="business-size-container input-section">
+      <label>Business Size</label>
+      <div class="select hbox middle" id="business-size-select">
+        <span>Select Option</span>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+      </div>
+      <ul class="options vbox" id="business-size-options">
+        <li class="hbox middle">1-10</li>
+        <li class="hbox middle">11-50</li>
+        <li class="hbox middle">51-100</li>
+        <li class="hbox middle">101-250</li>
+        <li class="hbox middle">250+</li>
+      </ul>
+      <span class="error-message"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Please select a valid business size</span>
+    </div>
+    <div class="importance-indicator input-section">
+      <label>What is the most important thing to you in a solution?</label>
+      <div class="radio hbox">
+        <div class="left">
+          <div>
+            <input type="radio" id="real-time-analytics" name="importantSolution" value="real time analytics"/>
+            <label for="real-time-analytics"><span></span>Real-time Analytics</label>
+          </div>
+          <div>
+            <input type="radio" id="query-response" name="importantSolution" value="query response time"/>
+            <label for="query-response"><span></span>Query Response Time</label>
+          </div>
+          <div>
+            <input type="radio" id="high-concurrency" name="importantSolution" value="high concurrency"/>
+            <label for="high-concurrency"><span></span>High Concurrency</label>
+          </div>
+          <div>
+            <input type="radio" id="fast-data" name="importantSolution" value="fast data ingest"/>
+            <label for="fast-data"><span></span>Fast Data Ingest</label>
+          </div>
+        </div>
+        <div class="right">
+          <div>
+            <input type="radio" id="scalability" name="importantSolution" value="scalability"/>
+            <label for="scalability"><span></span>Scalability</label>
+          </div>
+          <div>
+            <input type="radio" id="document-storage" name="importantSolution" value="document storage"/>
+            <label for="document-storage"><span></span>Document storage</label>
+          </div>
+          <div>
+            <input type="radio" id="full-text" name="importantSolution" value="full text search"/>
+            <label for="full-text"><span></span>Full text search</label>
+          </div>
+          <div>
+            <input type="radio" id="price" name="importantSolution" value="price"/>
+            <label for="price"><span></span>Price</label>
+          </div>
+        </div>
+      </div>
+      <span class="error-message"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Please choose one of the above</span>
+    </div>
+    <button id="continue-button" type="button">
+      Continue to Schedule a Time
+      <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+    </button>
+  </form>
+</section>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
